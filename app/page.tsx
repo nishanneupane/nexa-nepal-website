@@ -73,7 +73,12 @@ export default function Home() {
           Services For Clients</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 space-x-0 sm:space-x-2 space-y-2">
-          <ServiceCard icon={Pencil} title={"Graphic Design"} description={"Our customers get solutions and business opportunities instead of just projects."} link={"/services"} />
+          <ServiceCard
+            icon={Pencil}
+            title={"Graphic Design"}
+            description={"Our customers get solutions and business opportunities instead of just projects."}
+            link={"/services"}
+          />
           <ServiceCard icon={Video} title={"Video Design"} description={"Our customers get solutions and business opportunities instead of just projects."} link={"/services"} />
           <ServiceCard icon={Globe} title={"Social Media Marketing"} description={"Our customers get solutions and business opportunities instead of just projects."} link={"/services"} />
           <ServiceCard icon={Computer} title={"Web Design"} description={"Our customers get solutions and business opportunities instead of just projects."} link={"/services"} />

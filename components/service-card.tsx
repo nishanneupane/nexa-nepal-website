@@ -8,14 +8,15 @@ interface ServiceCardProps {
     title: string;
     description: string;
     link: string;
+    color?:string;
 }
-export default function ServiceCard({ icon: Icon, title, description, link }: ServiceCardProps) {
+export default function ServiceCard({ icon: Icon, title, description, link ,color}: ServiceCardProps) {
     return (
         <Card>
             <CardHeader>
                 <CardTitle>
                     <div className=' flex justify-around space-x-3'>
-                        <Icon className='w-10 h-10' />
+                        <Icon className={`w-10 h-10 animate-bounce text-[${color}]`} />
                         <h2 className='font-bold text-blue-700 text-3xl'>{title}</h2>
                     </div>
                 </CardTitle>
