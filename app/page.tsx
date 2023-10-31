@@ -20,7 +20,7 @@ export default function Home() {
           <div className="flex flex-col items-center justify-center max-w-3xl text-center m-auto space-y-3">
             <h2 className="text-4xl sm:text-6xl font-bold text-white shadow-sm">
               Give us your work,
-              we'll do the rest
+              we&apos;ll do the rest
             </h2>
 
             <p className="text-medium text-lg font-medium text-white">
