@@ -17,11 +17,11 @@ export default function Navbar() {
                 </Link>
             </div>
 
-            <div className='space-x-3 font-semibold font-sans text-lg text-black hover:text-blue-700'>
-                <Link href={"/"}>Home</Link>
-                <Link href={"/about"}>About</Link>
-                <Link href={"/services"}>Services</Link>
-                <Link href={"/contact"}>Contact</Link>
+            <div className='space-x-3 font-semibold font-sans text-lg '>
+                <Link className='text-black hover:text-blue-700' href={"/"}>Home</Link>
+                <Link className='text-black hover:text-blue-700' href={"/about"}>About</Link>
+                <Link className='text-black hover:text-blue-700' href={"/services"}>Services</Link>
+                <Link className='text-black hover:text-blue-700' href={"/contact"}>Contact</Link>
             </div>
         </nav>
     )
