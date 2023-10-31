@@ -19,11 +19,12 @@ export default function Home() {
         <div className="absolute mt-15">
           <div className="flex flex-col items-center justify-center max-w-3xl text-center m-auto space-y-3">
             <h2 className="text-4xl sm:text-6xl font-bold text-white shadow-sm">
-              Discover Our Proven
-              Formula To Get Success
+              Give us your work,
+              we'll do the rest
             </h2>
 
-            <p className="text-medium text-lg font-medium text-white">You deserve to be seen. We are here to achieve your goal.</p>
+            <p className="text-medium text-lg font-medium text-white">
+              Your Growth, Our Mission</p>
             <Button variant={"secondary"}>
               Get Started
             </Button>
@@ -35,8 +36,8 @@ export default function Home() {
       </div>
       <div className="flex items-center justify-center  mt-5">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 space-x-0 sm:space-x-4 w-full space-y-2 sm:space-y-0 max-w-5xl -mt-0 sm:-mt-12">
-          <CardItems icon={Brain} title="Creative Ideas" />
-          <CardItems icon={ThumbsUp} title="Good Quality" />
+          <CardItems icon={Brain} title="Creativity" />
+          <CardItems icon={ThumbsUp} title="Quality" />
           <CardItems icon={FastForward} title="Fastest Delivery" />
           <CardItems icon={HelpingHand} title="24/7 Support" />
         </div>
@@ -54,12 +55,12 @@ export default function Home() {
         />
 
         <div className="flex sm:items-start items-center justify-center flex-col sm:text-start text-center sm:max-w-[500px] max-w-full space-y-2">
-          <p className="text-black font-medium text-lg">We are JF Digital Solutions Agency!</p>
+          <p className="text-black font-medium text-lg">We are online agency to do your design!</p>
           <h2 className="text-black font-bold text-6xl">
-            Choose The Best Digital Company in the City.
+            Pick out the best marketing agency for you.
           </h2>
           <p className="text-slate-500 font-sm font-medium">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            get connected with us. we are the most trusted agency in nepal.
           </p>
           <p className=" font-bold text-blue-700 cursor-pointer">
             View More About Us!
