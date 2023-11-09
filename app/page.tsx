@@ -1,5 +1,7 @@
 import CardItems from "@/components/cardItems";
 import ServiceCard from "@/components/service-card";
+import TestimonialCard from "@/components/testimonial-card";
+import { Avatar } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Brain, Computer, FastForward, Globe, HelpingHand, Pencil, ThumbsUp, TriangleRightIcon, Video } from "lucide-react";
 import Image from "next/image";
@@ -84,7 +86,106 @@ export default function Home() {
           <ServiceCard icon={Globe} title={"Social Media Marketing"} description={"Our customers get solutions and business opportunities instead of just projects."} link={"/services"} />
           <ServiceCard icon={Computer} title={"Web Design"} description={"Our customers get solutions and business opportunities instead of just projects."} link={"/services"} />
         </div>
+
+        <div className="py-5 mt-16 max-w-5xl mx-auto">
+          <div className="flex items-center justify-center flex-col max-w-3xl m-auto">
+            <h2 className="text-black text-lg">Testimonials</h2>
+            <h1 className="font-bold text-4xl md:text-6xl ">What other people says on us?</h1>
+          </div>
+
+          <div className="mt-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+              <TestimonialCard image={"/avatar1.jpg"} name={"Rakesh Tiwari"} comment={"With helpful SEO strategies, I have been able to rank my blogs higher in search engines. thanks to nexanepal."} />
+              <TestimonialCard image={"/avatar2.jpg"} name={"Nitisha Rana"} comment={"What an amazing team! They helped me out all the way… Recommend NexaNepal to everyone with a business idea.."} />
+            </div>
+          </div>
+        </div>
+
+        {/* capable techs */}
+        <div className="py-5 mt-16 max-w-5xl mx-auto">
+          <div className="flex items-center justify-center flex-col max-w-3xl m-auto">
+            <h1 className="font-bold text-4xl md:text-6xl max-w-5xl ">Proficient Technologies</h1>
+          </div>
+
+          <div className="mt-12 max-w-5xl mx-auto flex justify-start items-center">
+            <div className="flex items-center gap-2 flex-wrap">
+              <div className="bg-slate-100 p-1 shad-md rounded-md flex items-center justify-center flex-col">
+                <Avatar>
+                  <Image
+                    src={"/wordpress.png"}
+                    width={100}
+                    height={100}
+                    alt="item"
+                    className="rounded-full object-contain"
+                  />
+                </Avatar>
+                <p className="font-light text-muted-foreground">Wordpress</p>
+              </div>
+              <div className="bg-slate-100 p-1 shad-md rounded-md flex items-center justify-center flex-col">
+                <Avatar>
+                  <Image
+                    src={"/photoshop.png"}
+                    width={100}
+                    height={100}
+                    alt="item"
+                    className="rounded-full object-contain"
+                  />
+                </Avatar>
+                <p className="font-light text-muted-foreground">PhotoShop</p>
+              </div>
+              <div className="bg-slate-100 p-1 shad-md rounded-md flex items-center justify-center flex-col">
+                <Avatar>
+                  <Image
+                    src={"/adobe-premier.png"}
+                    width={100}
+                    height={100}
+                    alt="item"
+                    className="rounded-full object-contain"
+                  />
+                </Avatar>
+                <p className="font-light text-muted-foreground">Adobe Premier Pro</p>
+              </div>
+              <div className="bg-slate-100 p-1 shad-md rounded-md flex items-center justify-center flex-col px-3">
+                <Avatar>
+                  <Image
+                    src={"/react.png"}
+                    width={120}
+                    height={120}
+                    alt="item"
+                    className="rounded-full object-contain"
+                  />
+                </Avatar>
+                <p className="font-light text-muted-foreground text-sm">React js</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Our projects */}
+        <div className="py-5 mt-16 max-w-5xl mx-auto">
+          <div className="flex items-center justify-center flex-col max-w-3xl m-auto">
+            <h1 className="font-bold text-4xl md:text-6xl ">Our Projects</h1>
+          </div>
+
+          <div className="mt-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+              <p>No projects to show</p>
+            </div>
+          </div>
+        </div>
+
+
+        {/* Our footer */}
+        <footer className="py-5 mt-16 max-w-5xl mx-auto fixed bottom-0">
+          <div className="flex items-center justify-center flex-col max-w-3xl m-auto">
+            <p className="text-sm text-muted-foreground">created by nishan neupane @ 2023 alright reserved </p>
+          </div>
+
+        </footer>
+
       </div>
+
+
     </>
 
   )
