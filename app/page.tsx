@@ -175,13 +175,7 @@ export default function Home() {
         </div>
 
 
-        {/* Our footer */}
-        <footer className="py-5 mt-16 max-w-5xl mx-auto fixed bottom-0">
-          <div className="flex items-center justify-center flex-col max-w-3xl m-auto">
-            <p className="text-sm text-muted-foreground">created by nishan neupane @ 2023 alright reserved </p>
-          </div>
-
-        </footer>
+        
 
       </div>
 
