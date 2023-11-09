@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Nexa Nepal',
-  description: 'It is an digital marketing agency.',
+  description: 'It is an digital marketing agency based in nepal.',
 }
 
 export default function RootLayout({
