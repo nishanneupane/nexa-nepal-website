@@ -12,22 +12,22 @@ export default function Home() {
       <div className=' relative flex items-center justify-center flex-col'>
         <div className=" w-[100%] h-[500px] " >
           <Image
-            src={"/business1.jpg"}
+            src={"/business3.jpg"}
             alt="image"
             fill
-            className="object-cover -z-10 rounded-b-[200px]"
+            className="object-cover -z-10 rounded-b-[200px] opacity-50"
           />
         </div>
         <div className="absolute mt-15">
           <div className="flex flex-col items-center justify-center max-w-3xl text-center m-auto space-y-3">
-            <h2 className="text-4xl sm:text-6xl font-bold text-white shadow-sm">
+            <h2 className="text-4xl sm:text-6xl font-bold text-black shadow-sm">
               Give us your work,
               we&apos;ll handle the rest
             </h2>
 
-            <p className="text-medium text-lg font-medium text-white">
+            <p className="text-medium text-lg font-medium text-black">
               Your Growth, Our Mission</p>
-            <Button variant={"secondary"}>
+            <Button className="text-white bg-blue-600 hover:bg-blue-500">
               Get Started
             </Button>
           </div>
@@ -37,7 +37,7 @@ export default function Home() {
 
       </div>
       <div className="flex items-center justify-center  mt-5">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 space-x-0 sm:space-x-4 w-full space-y-2 sm:space-y-0 max-w-5xl -mt-0 sm:-mt-12">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 w-full max-w-5xl -mt-0 sm:-mt-12 px-2">
           <CardItems icon={Brain} title="Creativity" />
           <CardItems icon={ThumbsUp} title="Quality" />
           <CardItems icon={FastForward} title="Fastest Delivery" />
@@ -75,7 +75,7 @@ export default function Home() {
         <h2 className="font-bold text-6xl sm:max-w-3xl text-center m-auto">We Provide All Exclusive
           Services For Clients</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 space-x-0 sm:space-x-2 space-y-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 px-2">
           <ServiceCard
             icon={Pencil}
             title={"Graphic Design"}
@@ -93,7 +93,7 @@ export default function Home() {
         </div>
 
         <div className="mt-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 px-2">
             <TestimonialCard image={"/avatar1.jpg"} name={"Rakesh Tiwari"} comment={"With helpful SEO strategies, I have been able to rank my blogs higher in search engines. thanks to nexanepal."} />
             <TestimonialCard image={"/avatar2.jpg"} name={"Nitisha Rana"} comment={"What an amazing team! They helped me out all the way… Recommend NexaNepal to everyone with a business idea.."} />
           </div>
@@ -103,10 +103,10 @@ export default function Home() {
       {/* capable techs */}
       <div className="py-5 mt-16 max-w-5xl mx-auto">
         <div className="flex items-center justify-center flex-col max-w-3xl m-auto">
-          <h1 className="font-bold text-4xl md:text-6xl max-w-5xl ">Proficient Technologies</h1>
+          <h1 className="font-bold text-4xl md:text-6xl max-w-5xl text-center">Proficient Technologies</h1>
         </div>
 
-        <div className="mt-12 max-w-5xl mx-auto flex justify-start items-center">
+        <div className="mt-12 max-w-3xl mx-auto flex justify-start items-center px-3">
           <div className="flex items-center gap-2 flex-wrap">
             <div className="bg-slate-100 p-1 shad-md rounded-md flex items-center justify-center flex-col">
               <Avatar>
